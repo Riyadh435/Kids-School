@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", serif;
+}
+
+/* Nav part */
+.header {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav .school {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.school img {
+  width: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.school h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+}
+
+.nav-btns ul {
+  display: flex;
+  gap: 20px;
+}
+.nav-btns ul li {
+  list-style: none;
+}
+.nav-btns ul li a {
+  font-size: 1.2rem;
+
+  text-decoration: none;
+}
+li .a {
+  font-weight: bold;
+  color: #fea301;
+}
+li .b {
+  color: #01acfd;
+}
+li .c {
+  color: #05d4df;
+}
+li .d {
+  color: #5d58ef;
+}
+
+.contact button {
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  border: none;
+  background-color: #fea301;
+  padding: 15px 35px;
+  border-radius: 12px;
+}
+
+.header hr {
+  display: none;
+  border: none;
+  height: 1px;
+  background-color: #fea301;
+}
+.contact .menu {
+  display: none;
+}
+
+/* Banner style */
+.banner {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.banner .details h1 {
+  margin: 0;
+  color: black;
+  font-size: 3.5rem;
+}
+
+.details h1 .a {
+  color: #fea301;
+}
+.details h1 .b {
+  color: #01acfd;
+}
+.banner .details p {
+  max-width: 620px;
+  text-align: justify;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.banner .details button {
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  border: none;
+  background-color: black;
+  padding: 15px 35px;
+  border-radius: 12px;
+}
+
+.banner .image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .header hr,
+  .contact .menu {
+    display: block;
+  }
+  .nav-btns,
+  .school h2,
+  .contact button {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .banner .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner .details h1,
+  .banner .details p {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .banner .image img {
+    padding: 20px;
+  }
+}
